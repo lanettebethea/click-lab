@@ -1,0 +1,25 @@
+console.log("Hello World");
+
+let headline = document.getElementById("headline-1");
+
+let pinkBtn = document.getElementById("pink-btn");
+let blueBtn = document.getElementById("blue-btn");
+
+let cottonCandyImg = document.getElementById("cotton-candy-img");
+let theBody = document.getElementById("my-body");
+
+pinkBtn.addEventListener("click", function () {
+	headline.style.color = "hotpink";
+	pinkBtn.style.color = "pink";
+	cottonCandyImg.src = "cotton-candy-pink.jpg"
+	theBody.style.backgroundColor = "mistyrose";
+	cottonCandyImg.classList.add("animate__animated");
+	cottonCandyImg.classList.add("animate__tada");
+});
+
+blueBtn.addEventListener("click", function () {
+	headline.style.color = "blue";
+    blueBtn.style.color = "blue";
+    cottonCandyImg.src = "cotton-candy-blue.jpg";
+    theBody.style.backgroundColor="lightcyan";
+});
