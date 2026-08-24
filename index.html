@@ -1,25 +1,63 @@
 <!DOCTYPE HTML>
-<html>
+<html data-theme="dark">
   <head>
-    <title>Quiz</title>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <title>Cat Quiz</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/card.css">
+	<link rel="stylesheet" href="css/choice-list.css">
+	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body id="my-body">
-    <h1 id="headline-1" class="nes-text animate__animated animate__tada"> My Quiz </h1>
-    <p id="tagline-1" class="nes-text is-success"> <span>Take the quiz</span> </p>
-    <button id="pink-btn" class="nes-btn is-error"> Turn it Pink </button>
-    <button id="blue-btn" class="nes-btn is-primary"> Turn it Blue </button>
-    <div>
-      <img id="cotton-candy-img" src="cotton-candy-blue.jpg">
-      <div>
-        <p class="attribution">"<a rel="noopener noreferrer" href="https://www.flickr.com/photos/27526538@N07/5427095689">Cotton Candy</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/27526538@N07">mynameisharsha</a> is licensed under <a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/2.0/?ref=openverse">CC BY-SA 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
-      </div>
+    <h1 id="headline-1"> My Cat Quiz </h1>
+    <div id="start-quiz-banner" class="banner">
+		Found out if you are the Meowster of the Cat Universe.
+	</div>	
+    <!-- <div id="card-line" class="card"> -->
+		<!-- <h1> 1. What did the fairy godmother in Sleeping Beauty Say </h1> -->
+		<!-- <div class="choice-list"> -->
+			<!-- <button id="pink-btn" class="nes-btn is-error"> Turn it Pink </button> -->
+			<!-- <button id="blue-btn" class="nes-btn is-primary"> Turn it Blue </button> -->
+		<!-- </div> -->
+    <!-- </div> -->
+	<div class=flex-container>
+		<div class="flip-card">
+				<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<h3>What sound does a cat make??</h3>
+				</div>
+				<div class="flip-card-back">
+					<h3>Meow!</h3>
+				</div>
+				</div>
+		</div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<h3>What is internet sensation Grumpy Cat's real name?</h3>
+			</div>
+			<div class="flip-card-back">
+				<h3>Tardar Sauce!</h3>
+			</div>
+			</div>
+		</div>
+		<div class="flip-card">
+			<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<h3>What part of the cat is like a human fingerprint?</h3>
+			</div>
+			<div class="flip-card-back">
+				<h3>Their noseprint!</h3>
+			</div>
+			</div>
+		</div>
+	</div>
+	
+	<div>
+      <!-- <img id="cat-walk-img" src="cat-walk.gif"> -->
+	  <img id="cat-walk-img" src="cat-walk.gif" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);" alt="Bottom GIF of Cat">
     </div>
     <script src="script.js"></script>
   </body>
 </html>
+
