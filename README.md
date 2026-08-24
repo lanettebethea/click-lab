@@ -1,6 +1,6 @@
 # My Cat Quiz
 
-![My wireframe](wireframe.png)
+![My wireframe](wireframe.jpg)
 
 ## What it is
 A 3 question cat quiz
